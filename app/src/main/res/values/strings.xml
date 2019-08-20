@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SumerCard</string>
+
+    <string name="password_hint">Password</string>
+    <string name="email_hint">E-mail address</string>
+    <string name="username_hint">Username</string>
+    <string name="sign_up_button_label">SIGN UP</string>
+    <string name="sign_up_error_message">Please make sure you enter an email address, password and username!</string>
+    <string name="sign_up_error_title">Error!</string>
+    <string name="sign_up_success">Account successfully created! You can now Login.</string>
+    <string name="login_error_message">Please make sure you enter an email address and password!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="login_button_label">LOGIN ME</string>
+    <string name="sign_up_text">SIGN UP!</string>
+    <string name="login_text">Already member, LOGIN!</string>
+    <string name="title_activity_login">SIGN UP</string>
+    <string name="add_item">Add New Item</string>
+    <string name="action_logout">Log Out</string>
+
+    <string name="appbar_scrolling_view_behavior">appbar scrolling view behavior</string>
+
+    <string name="message_write_error">Error Writing Message !</string>
+    <string name="message_write_success">Successfully written to NFC Tag !</string>
+    <string name="message_write_progress">Writing to NFC Tag..</string>
+    <string name="message_tag_detected">NFC Tag Detected !</string>
+    <string name="message_read_tag">Read Your Card Please..</string>
+    <string name="message_write_tag">Write NFC Tag</string>
+    <string name="message_tap_tag">Tap the NFC Tag to your device !</string>
+    <string name="hint_message">Message</string>
+    <string name="five_thousand">500</string>
+    <string name="iqd"> IQD</string>
+</resources>

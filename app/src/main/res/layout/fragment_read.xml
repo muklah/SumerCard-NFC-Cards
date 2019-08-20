@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/read_nfc_background"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/activity_read_fragment_margin">
+
+    <ImageView
+        android:id="@+id/read_nfc_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/read_nfc_icon"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/read_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/message_read_tag"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:id="@+id/current_balance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/title">
+
+    <TextView
+        android:id="@+id/current_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"
+        android:text="Current balance"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/current_balance_iqd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:text="12,000 IQD"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite" />
+
+    <RelativeLayout
+        android:id="@+id/paid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_balance_layout">
+
+    <TextView
+        android:id="@+id/paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Paid"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/paid_iqd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/five_thousand"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iqd"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:paddingLeft="2dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

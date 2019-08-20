@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "customers": {
+      "$customerId": {
+      ".read": true,
+      ".write": true,
+      }
+    },
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid",
+        "payments": {
+          "$payments_id": {
+            "customerId": {
+              ".validate": "newData.isString() && newData.val().length > 0"
+            }
+          }
+        }
+      }
+    }
+  }
+}
